@@ -17,7 +17,7 @@ dotenv.config();
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: ["https://socialmediaappserver-e2ws.onrender.com", "https://post-it-heroku.herokuapp.com"],
+    origin: ["https://socialmediaappserver-e2ws.onrender.com"],
   },
 });
 
@@ -43,10 +43,10 @@ app.use("/api/users", users);
 app.use("/api/comments", comments);
 app.use("/api/messages", messages);
 
-if (process.env.NODE_ENV == "production") {
-  app.use(express.static(path.join(__dirname, "/client/build")));
+// if (process.env.NODE_ENV == "production") {
+//   app.use(express.static(path.join(__dirname, "/client/build")));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"));
-  });
-}
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "client/build", "index.html"));
+//   });
+// }
