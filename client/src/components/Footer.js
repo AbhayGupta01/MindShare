@@ -10,7 +10,7 @@ const Footer = () => {
         <Typography variant="subtitle1">
           Don't forget to star the{" "}
           <a
-            href="https://github.com/ihtasham42/social-media-app"
+            href="https://github.com/AbhayGupta01/SocialMediaApp"
             target="_blank"
           >
             Repo
