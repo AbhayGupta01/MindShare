@@ -17,7 +17,7 @@ dotenv.config();
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: ["https://socialmediaappserver-e2ws.onrender.com", "https://post-it-heroku.herokuapp.com", "https://main--cheerful-choux-9c1fe7.netlify.app/", "https://cheerful-choux-9c1fe7.netlify.app/"],
+    origin: ["https://socialmediaappserver-e2ws.onrender.com", "https://post-it-heroku.herokuapp.com", "https://main--cheerful-choux-9c1fe7.netlify.app/", "https://cheerful-choux-9c1fe7.netlify.app/", "https://socialmediaappserver-e2ws.onrender.com/socket.io/"],
     credentials: true
   },
 });
