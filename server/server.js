@@ -37,11 +37,11 @@ httpServer.listen(process.env.PORT || 4000, () => {
 });
 
 app.use(express.json());
-app.use(cors());
-app.use("/api/posts", posts);
-app.use("/api/users", users);
-app.use("/api/comments", comments);
-app.use("/api/messages", messages);
+app.get(cors());
+app.get("/api/posts", posts);
+app.get("/api/users", users);
+app.get("/api/comments", comments);
+app.get("/api/messages", messages);
 
 // if (process.env.NODE_ENV == "production") {
 //   app.use(express.static(path.join(__dirname, "/client/build")));
