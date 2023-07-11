@@ -1,7 +1,8 @@
 # PostIt
 PostIt is a fully-featured social media web application, built with the MERN stack.  
 
-Deployed at: https://post-it-heroku.herokuapp.com/  
+Deployed at: https://postit-ehnus.netlify.app/ 
+```
 ![GIF of PostIt walkthrough](https://media.giphy.com/media/9tnaXy42T4NzSJdHhP/giphy.gif)
 
 ## Features
