@@ -82,11 +82,11 @@ const SignupView = () => {
         <Typography variant="h5" gutterBottom>
           Sign Up
         </Typography>
-        <Button variant="text" sx={{ minWidth: 65 }} 
-              onClick={() => navigate("/login")}>
         <Typography color="text.secondary" >
           Already have an account?
         </Typography>
+        <Button variant="text" sx={{ minWidth: 65 }} 
+              onClick={() => navigate("/login")}>  Login
         </Button>
         
         <Box component="form" onSubmit={handleSubmit}>
