@@ -18,6 +18,7 @@ const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
     origin: ["https://socialmediaappserver-e2ws.onrender.com", "https://post-it-heroku.herokuapp.com", "https://main--cheerful-choux-9c1fe7.netlify.app/", "https://cheerful-choux-9c1fe7.netlify.app/"],
+    credentials: true
   },
 });
 
@@ -36,12 +37,12 @@ httpServer.listen(process.env.PORT || 4000, () => {
   console.log("Listening");
 });
 
-app.get(express.json());
-app.get(cors());
-app.get("/api/posts", posts);
-app.get("/api/users", users);
-app.get("/api/comments", comments);
-app.get("/api/messages", messages);
+app.use(express.json());
+app.use(cors());
+app.use("/api/posts", posts);
+app.use("/api/users", users);
+app.use("/api/comments", comments);
+app.use("/api/messages", messages);
 
 // if (process.env.NODE_ENV == "production") {
 //   app.use(express.static(path.join(__dirname, "/client/build")));
