@@ -14,11 +14,11 @@ const Post = require("./models/Post");
 
 dotenv.config();
 
-const httpServer = require("http").createServer(app);
+const httpServer = require("https").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: ["https://socialmediaappserver-e2ws.onrender.com", "https://post-it-heroku.herokuapp.com", "https://main--cheerful-choux-9c1fe7.netlify.app/"],
-  },
+    origin: '*',
+  }
 });
 
 io.use(authSocket);
