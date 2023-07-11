@@ -17,7 +17,7 @@ dotenv.config();
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: ["https://socialmediaappserver-e2ws.onrender.com"],
+    origin: ["https://socialmediaappserver-e2ws.onrender.com", "https://post-it-heroku.herokuapp.com"],
   },
 });
 
