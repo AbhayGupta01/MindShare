@@ -39,7 +39,7 @@ function App() {
         <CssBaseline />
         <Routes>
           <Route path="/" element={<ExploreView />} />
-          <Route path="/posts/:id" element={<PostView />} />
+          <Route path={BASE_URL + "/posts/:id"} element={<PostView />} />
           <Route
             path="/posts/create"
             element={
@@ -56,10 +56,10 @@ function App() {
               </PrivateRoute>
             }
           />
-          <Route path="/search" element={<SearchView />} />
-          <Route path="/users/:id" element={<ProfileView />} />
-          <Route path="/login" element={<LoginView />} />
-          <Route path="/signup" element={<SignupView />} />
+          <Route path={BASE_URL+"/search"} element={<SearchView />} />
+          <Route path={BASE_URL + "/users/:id"} element={<ProfileView />} />
+          <Route path={BASE_URL + "/login" }element={<LoginView />} />
+          <Route path={BASE_URL + "/signup"} element={<SignupView />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
