@@ -14,11 +14,13 @@ const Post = require("./models/Post");
 
 dotenv.config();
 
-const httpServer = require("https").createServer(app);
+const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: '*',
-  }
+    origin: true,
+    credentials: true,
+  },
+  allowEIO3: true,
 });
 
 io.use(authSocket);
