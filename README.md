@@ -24,7 +24,7 @@ Deployed at: https://postit-ehnus.netlify.app/
 ## Installation and usage
 1) Clone this repository  
 ```
-git clone https://github.com/ihtasham42/social-media-app.git
+git clone https://github.com/AbhayGupta01/SocialMediaApp.git
 ```
 2) Install dependencies  
 ```
