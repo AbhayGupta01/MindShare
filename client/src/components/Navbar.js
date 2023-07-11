@@ -130,10 +130,12 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Button variant="text" sx={{ minWidth: 80 }} href="/signup">
+              <Button variant="text" sx={{ minWidth: 80 }} 
+              onClick={() => navigate("/signup")}>
                 Sign Up
               </Button>
-              <Button variant="text" sx={{ minWidth: 65 }} href="/login">
+              <Button variant="text" sx={{ minWidth: 65 }} 
+              onClick={() => navigate("/login")}>
                 Login
               </Button>
             </>
