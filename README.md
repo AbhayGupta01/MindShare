@@ -1,5 +1,5 @@
-# PostIt
-PostIt is a fully-featured social media web application, built with the MERN stack.  
+# Social Media App
+Social Media App is a fully-featured social media web application, built with the MERN stack.  
 
 Deployed at: https://postit-ehnus.netlify.app/ 
 
