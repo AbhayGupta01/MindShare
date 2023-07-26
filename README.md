@@ -22,7 +22,7 @@ Deployed at: https://mindshare-ethnus.netlify.app/
 ## Installation and usage
 1) Clone this repository  
 ```
-git clone https://github.com/AbhayGupta01/SocialMediaApp.git
+git clone https://github.com/AbhayGupta01/MindShare.git
 ```
 2) Install dependencies  
 ```
