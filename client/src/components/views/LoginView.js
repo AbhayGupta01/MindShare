@@ -47,7 +47,7 @@ const LoginView = () => {
       <Stack alignItems="center">
         <Typography variant="h2" color="text.secondary" sx={{ mb: 6 }}>
           <Link to="/" color="inherit" underline="none">
-            Social Media App
+            MindShare
           </Link>
         </Typography>
         <Typography variant="h5" gutterBottom>

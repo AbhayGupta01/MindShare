@@ -7,7 +7,7 @@ const Copyright = () => {
     <Typography variant="subtitle1" color="text.secondary">
       Copyright © 2022{" "}
       <Link to="/" color="inherit">
-        Social Media App
+        MindShare
       </Link>
     </Typography>
   );

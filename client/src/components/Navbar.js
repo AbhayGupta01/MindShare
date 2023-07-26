@@ -91,7 +91,7 @@ const Navbar = () => {
             color={theme.palette.primary.main}
           >
             {/* <Link to="/" color="inherit"> */}
-              Social Media App
+              MindShare
             {/* </Link> */}
           </Typography>
         </HorizontalStack>

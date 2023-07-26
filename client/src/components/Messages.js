@@ -227,9 +227,9 @@ const Messages = (props) => {
       spacing={2}
     >
       <AiFillMessage size={80} />
-      <Typography variant="h5">Social Media App Messenger</Typography>
+      <Typography variant="h5">MindShare Messenger</Typography>
       <Typography color="text.secondary">
-        Privately message other users on Social Media App
+        Privately message other users on MindShare
       </Typography>
     </Stack>
   );
